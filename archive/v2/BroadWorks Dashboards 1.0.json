@@ -1,0 +1,783 @@
+[
+  {
+    "_id": "Sharing-Dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Sharing Dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"Sharing:-room-joins-per-time-interval\",\"type\":\"visualization\",\"panelIndex\":1,\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":3},{\"id\":\"Sharing:-Unique-rooms-joined-per-time-interval\",\"type\":\"visualization\",\"panelIndex\":2,\"size_x\":12,\"size_y\":3,\"col\":1,\"row\":7},{\"id\":\"4-Switch-to:\",\"type\":\"visualization\",\"panelIndex\":3,\"size_x\":2,\"size_y\":2,\"col\":1,\"row\":1},{\"id\":\"Sharing:-Total-Participants\",\"type\":\"visualization\",\"panelIndex\":4,\"size_x\":3,\"size_y\":2,\"col\":3,\"row\":1},{\"id\":\"Sharing:-Unique-Sessions\",\"type\":\"visualization\",\"panelIndex\":5,\"size_x\":3,\"size_y\":2,\"col\":6,\"row\":1}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "IM-Dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "title": "IM Dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":3,\"id\":\"Total-IMs-Sent\",\"panelIndex\":2,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"One-on-one-IMs-per-time-interval\",\"panelIndex\":4,\"row\":3,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Group-IMs-per-time-interval\",\"panelIndex\":5,\"row\":6,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"Unique-Senders\",\"panelIndex\":6,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"IM-Destinations\",\"panelIndex\":9,\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"id\":\"3-Switch-to:\",\"type\":\"visualization\",\"panelIndex\":10,\"size_x\":2,\"size_y\":2,\"col\":1,\"row\":1}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\",\"lowercase_expanded_terms\":false}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "Collaborate-Dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Collaborate Dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"Collaborate-Sessions-per-Role\",\"panelIndex\":1,\"row\":3,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"},{\"col\":3,\"id\":\"Col:-Leader-Sessions\",\"panelIndex\":8,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"Col:-Participant-Sessions\",\"panelIndex\":9,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"Col:-Unique-Owners\",\"panelIndex\":10,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"Col:-Avg-Duration\",\"panelIndex\":11,\"row\":1,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"Col:-Room-Type\",\"panelIndex\":12,\"row\":8,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"2-Switch-to:\",\"panelIndex\":13,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Col:-Sessions-vs.-Average-Duration\",\"panelIndex\":14,\"row\":11,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"},{\"id\":\"Collaborate-by-Codecs\",\"type\":\"visualization\",\"panelIndex\":16,\"size_x\":4,\"size_y\":3,\"col\":1,\"row\":8}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"colors\":{\"Leaders\":\"#890F02\",\"Participants\":\"#447EBC\"},\"legendOpen\":true}},\"P-12\":{\"vis\":{\"colors\":{\"Instant Room\":\"#BF1B00\",\"My Room\":\"#F9934E\",\"Project Room\":\"#052B51\"}}},\"P-14\":{\"vis\":{\"colors\":{\"Collaborate Sessions\":\"#EF843C\"},\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\",\"lowercase_expanded_terms\":false}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "Calls-Dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Calls Dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":4,\"id\":\"Unique-Calls-per-time-period\",\"panelIndex\":1,\"row\":3,\"size_x\":9,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Unique-Calls-for-Top-10-Users\",\"panelIndex\":6,\"row\":17,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"Unique-Users\",\"panelIndex\":7,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Calls-and-Unique-userids\",\"panelIndex\":9,\"row\":20,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"},{\"col\":7,\"id\":\"Answered-Calls\",\"panelIndex\":11,\"row\":1,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":3,\"id\":\"Unique-Calls\",\"panelIndex\":12,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Userid-List\",\"panelIndex\":18,\"row\":25,\"size_x\":12,\"size_y\":6,\"type\":\"visualization\"},{\"col\":1,\"id\":\"1-Switch-to:\",\"panelIndex\":20,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"Originating-Device-Category\",\"panelIndex\":24,\"row\":11,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Top-20-Enterprises\",\"panelIndex\":26,\"row\":3,\"size_x\":3,\"size_y\":5,\"type\":\"visualization\"},{\"col\":9,\"id\":\"Originating-Device:-UC-One-Communicator\",\"panelIndex\":27,\"row\":11,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Top-20-Enterprises-by-Group\",\"panelIndex\":28,\"row\":8,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"Terminating-Device-Category\",\"panelIndex\":29,\"row\":14,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"_source\"],\"id\":\"Unique-Calls\",\"panelIndex\":30,\"row\":31,\"size_x\":12,\"size_y\":4,\"sort\":[\"timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":5,\"id\":\"Source-and-Destination\",\"panelIndex\":31,\"row\":17,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Failed-Calls-Details\",\"panelIndex\":32,\"row\":11,\"size_x\":4,\"size_y\":6,\"type\":\"visualization\"},{\"col\":9,\"id\":\"Unique-Calls-by-Codecs\",\"panelIndex\":33,\"row\":17,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"Terminating-Device:-UC-One-Communicator\",\"panelIndex\":34,\"row\":14,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"colors\":{\"Answered\":\"#629E51\",\"Not Answered\":\"#BF1B00\"}}},\"P-7\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-9\":{\"vis\":{\"legendOpen\":false}},\"P-34\":{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\",\"lowercase_expanded_terms\":false}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "Unique-Calls",
+    "_type": "search",
+    "_source": {
+      "title": "Unique Calls",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"query\":\"(type:Normal AND NOT ascalltype:Internal AND direction:Originating AND NOT relatedcallidreason:* AND NOT originalcalledreason:*) OR (type:Normal AND NOT ascalltype:Internal AND direction:Terminating AND NOT relatedcallidreason:* AND (ascalltype:Network OR ascalltype:\\\"Network URL\\\" OR ascalltype:Emergency))\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Unique-IMs",
+    "_type": "search",
+    "_source": {
+      "title": "Unique IMs",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "logtimestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"bwlog*\",\"query\":{\"query_string\":{\"query\":\"\\\"SMCUMS.processPacket\\\" AND \\\"body\\\"\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "One-on-One-IMs",
+    "_type": "search",
+    "_source": {
+      "title": "One-on-One IMs",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "to",
+        "from",
+        "direction"
+      ],
+      "sort": [
+        "messagetimestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"messagearchive*\",\"query\":{\"query_string\":{\"query\":\"NOT to:*myroom*  AND NOT from:*myroom* AND NOT to:*unique* AND NOT from:*unique*\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Group-IMs",
+    "_type": "search",
+    "_source": {
+      "title": "Group IMs",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "to",
+        "from",
+        "direction"
+      ],
+      "sort": [
+        "messagetimestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"messagearchive*\",\"query\":{\"query_string\":{\"query\":\"to:*myroom*  OR  from:*myroom* OR to:*unique* OR from:*unique*\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Total-IMs-Sent",
+    "_type": "search",
+    "_source": {
+      "title": "Total IMs Sent",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "to",
+        "from",
+        "direction"
+      ],
+      "sort": [
+        "messagetimestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"messagearchive*\",\"query\":{\"query_string\":{\"query\":\"NOT from:*myroom* AND NOT from:*unique* AND direction:sent\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Unique-Calls-for-Top-10-Users",
+    "_type": "visualization",
+    "_source": {
+      "title": "Unique Calls for Top 10 Users",
+      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"userid\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Unique Calls for Top 10 Users\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Calls-and-Unique-userids",
+    "_type": "visualization",
+    "_source": {
+      "title": "Calls and Unique userids",
+      "visState": "{\"title\":\"Calls and Unique userids\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"starttime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"radius\",\"params\":{\"field\":\"userid\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Total-Unique-Calls-Displayed",
+    "_type": "visualization",
+    "_source": {
+      "title": "Total Unique Calls Displayed",
+      "visState": "{\"title\":\"Total Unique Calls Displayed\",\"type\":\"metric\",\"params\":{\"fontSize\":\"30\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Source-and-Destination",
+    "_type": "visualization",
+    "_source": {
+      "title": "Source and Destination",
+      "visState": "{\"title\":\"Source and Destination\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"(type:Normal AND NOT ascalltype:Internal AND direction:Terminating AND NOT relatedcallidreason:* AND NOT originalcalledreason:* AND NOT locationtype:\\\"BroadWorks Anywhere\\\" AND NOT locationtype:\\\"BroadWorks Mobility\\\") AND (ascalltype:Network OR ascalltype:\\\"Network URL\\\" OR ascalltype:Emergency)\",\"analyze_wildcard\":true}}},\"label\":\"PSTN Origination\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"(type:Normal AND direction:Originating AND (ascalltype:Network OR ascalltype:\\\"Network URL\\\" OR ascalltype:Emergency) AND (answerindicator:Yes OR answerindicator:\\\"Yes-PostRedirection\\\") AND NOT (relatedcallidreason:\\\"BroadWorks Anywhere Location\\\" OR relatedcallidreason:\\\"BroadWorks Mobility\\\" OR relatedcallidreason:\\\"Remote Office\\\" OR relatedcallidreason:\\\"Simultaneous Ring Personal\\\"))\",\"analyze_wildcard\":true}}},\"label\":\"PSTN Termination\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"ascalltype:Enterprise OR ascalltype:Group\",\"analyze_wildcard\":true}}},\"label\":\"Enterprise\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Collaborate-Sessions-per-Role",
+    "_type": "visualization",
+    "_source": {
+      "title": "Collaborate Sessions per Role",
+      "visState": "{\"title\":\"New Visualization\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"starttime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"collaborate_role:leader\",\"analyze_wildcard\":true}}},\"label\":\"Leaders\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"collaborate_role:participant\",\"analyze_wildcard\":true}}},\"label\":\"Participants\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Collaborate-Codec-Usage",
+    "_type": "visualization",
+    "_source": {
+      "title": "Collaborate Codec Usage",
+      "visState": "{\"title\":\"New Visualization\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":false,\"shareYAxis\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"codec\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"collaborate_role:*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "One-on-one-IMs-per-time-interval",
+    "_type": "visualization",
+    "_source": {
+      "title": "One-on-one IMs per time interval",
+      "visState": "{\"title\":\"One-on-one IMs per time interval\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"messagetimestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"direction\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"sent\":\"#BF1B00\",\"received\":\"#0A50A1\"}}}",
+      "description": "",
+      "savedSearchId": "One-on-One-IMs",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Group-IMs-per-time-interval",
+    "_type": "visualization",
+    "_source": {
+      "title": "Group IMs per time interval",
+      "visState": "{\"title\":\"Group IMs per time interval\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"messagetimestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"direction\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"received\":\"#BA43A9\"}}}",
+      "description": "",
+      "savedSearchId": "Group-IMs",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Unique-Senders",
+    "_type": "visualization",
+    "_source": {
+      "title": "Unique Senders",
+      "visState": "{\"title\":\"Unique IM Senders\",\"type\":\"metric\",\"params\":{\"fontSize\":\"30\"},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"from\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Total-IMs-Sent",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Total-IMs-Sent",
+    "_type": "visualization",
+    "_source": {
+      "title": "Total IMs Sent",
+      "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"30\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Total-IMs-Sent",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+    {
+    "_id": "IM-Destinations",
+    "_type": "visualization",
+    "_source": {
+      "title": "IM Destinations",
+      "visState": "{\"title\":\"IMs Sent Destinations\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"NOT from:*myroom* AND NOT from:*unique* AND NOT to:*myroom* AND NOT to:*unique* AND direction:sent\",\"analyze_wildcard\":true}}},\"label\":\"One-on-one\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"to:*myroom* AND direction:sent\",\"analyze_wildcard\":true}}},\"label\":\"My Room\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"to:*unique* AND direction:sent\",\"analyze_wildcard\":true}}},\"label\":\"Instant Group\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"One-on-one\":\"#EAB839\",\"My Room\":\"#64B0C8\",\"Ad Hoc Group\":\"#E24D42\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"messagearchive*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Col:-Room-Type",
+    "_type": "visualization",
+    "_source": {
+      "title": "Col: Room Type",
+      "visState": "{\"title\":\"Collaborate Codec Usage\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":false,\"shareYAxis\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"collaborate_roomtype\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"collaborate_role:*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Sharing:-room-joins-per-time-interval",
+    "_type": "visualization",
+    "_source": {
+      "title": "Sharing: room joins per time interval",
+      "visState": "{\"aggs\":[{\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"logtimestamp\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"},{\"id\":\"3\",\"params\":{\"customLabel\":\"Joins\"},\"schema\":\"metric\",\"type\":\"count\"},{\"id\":\"4\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"source: participant\"}}},\"label\":\"Participants\"},{\"input\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"source: owner\"}}},\"label\":\"Owners\"}]},\"schema\":\"group\",\"type\":\"filters\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"title\":\"Sharing: room joins per time interval\",\"type\":\"histogram\"}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":true}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"bwlog*\",\"query\":{\"query_string\":{\"query\":\"application:USSLog AND channel: RoomControl AND ussroomid:*  AND source:\\\"successfully joined room\\\"\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Sharing:-Unique-rooms-joined-per-time-interval",
+    "_type": "visualization",
+    "_source": {
+      "title": "Sharing: Unique rooms joined per time interval",
+      "visState": "{\"aggs\":[{\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"logtimestamp\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"},{\"id\":\"3\",\"params\":{\"customLabel\":\"Unique Room Joined\",\"field\":\"ussroomid\"},\"schema\":\"metric\",\"type\":\"cardinality\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"title\":\"Sharing: Unique rooms joined per time interval\",\"type\":\"histogram\"}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":true}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"bwlog*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"application:USSLog AND channel: RoomControl AND ussroomid:*  AND source:\\\"successfully joined room\\\"\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Col:-Unique-Owners",
+    "_type": "visualization",
+    "_source": {
+      "title": "Col: Unique Owners",
+      "visState": "{\"title\":\"Col: Unique Owners\",\"type\":\"metric\",\"params\":{\"fontSize\":\"30\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"collaborate_owner\",\"customLabel\":\"Unique Owners\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"query\":\"collaborate_owner:* AND collaborate_role:leader AND NOT answerindicator:No\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Col:-Participant-Sessions",
+    "_type": "visualization",
+    "_source": {
+      "title": "Col: Participant Sessions",
+      "visState": "{\"title\":\"Col: Participant Sessions\",\"type\":\"metric\",\"params\":{\"fontSize\":\"30\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Participant Sessions\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"query\":\"collaborate_owner:* AND collaborate_role:participant AND NOT answerindicator:No\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Col:-Leader-Sessions",
+    "_type": "visualization",
+    "_source": {
+      "title": "Col: Leader Sessions",
+      "visState": "{\"title\":\"Col: Leader Sessions\",\"type\":\"metric\",\"params\":{\"fontSize\":\"30\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Leader Sessions\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"query\":\"collaborate_owner:* AND collaborate_role:leader AND NOT answerindicator:No\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Sharing:-Unique-Sessions",
+    "_type": "visualization",
+    "_source": {
+      "title": "Sharing: Unique Sessions",
+      "visState": "{\"title\":\"Sharing: Unique Sessions\",\"type\":\"metric\",\"params\":{\"fontSize\":\"30\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"ussroomid\",\"customLabel\":\"Sessions\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"bwlog*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"application:USSLog AND channel: RoomControl AND ussroomid:*  AND source:\\\"successfully joined room\\\"\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Sharing:-Total-Participants",
+    "_type": "visualization",
+    "_source": {
+      "title": "Sharing: Total Participants",
+      "visState": "{\"title\":\"Sharing: Total Participants\",\"type\":\"metric\",\"params\":{\"fontSize\":\"30\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Participants\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"bwlog*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"application:USSLog AND channel: RoomControl AND ussroomid:*  AND source:\\\"successfully joined room\\\"\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Col:-Sessions-vs.-Average-Duration",
+    "_type": "visualization",
+    "_source": {
+      "title": "Col: Sessions vs. Average Duration",
+      "visState": "{\"title\":\"Calls and Unique userids\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":\"11\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Collaborate Sessions\"}},{\"id\":\"3\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"starttime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"radius\",\"params\":{\"field\":\"calculated_callduration\",\"customLabel\":\"Average Session Duration\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"colors\":{\"Answered\":\"#629E51\",\"Not Answered\":\"#BF1B00\"}}},\"P-2\":{\"vis\":{\"legendOpen\":true}},\"P-7\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-8\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-9\":{\"vis\":{\"legendOpen\":false}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"query\":\"collaborate_owner:* AND NOT answerindicator:No\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Collaborate-by-Codecs",
+    "_type": "visualization",
+    "_source": {
+      "title": "Collaborate by Codecs",
+      "visState": "{\"title\":\"Unique Calls by Codecs\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":false,\"shareYAxis\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Unique Calls\"}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"*H264*\"}}},\"label\":\"Video: H264\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"*VP9*\"}}},\"label\":\"Video: VP9\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"*VP8*\"}}},\"label\":\"Video: VP8\"},{\"input\":{\"query\":{\"bool\":{\"must_not\":[{\"wildcard\":{\"codec\":\"* *\"}},{\"wildcard\":{\"codec\":\"t38\"}}]}}},\"label\":\"Voice Only\"},{\"input\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"codec:\\\"t38\\\"\"}}},\"label\":\"FAX\"}]}},{\"id\":\"3\",\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"G729*\"}}},\"label\":\"-- G729\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"PCMU*\"}}},\"label\":\"-- G711\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"opus*\"}}},\"label\":\"-- opus\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"G722/*\"}}},\"label\":\"-- G722\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"G7221*\"}}},\"label\":\"-- G722.1\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"PCMA*\"}}},\"label\":\"-- G711.1\"},{\"input\":{\"query\":{\"bool\":{\"must_not\":[{\"wildcard\":{\"codec\":\"G729*\"}},{\"wildcard\":{\"codec\":\"PCMU*\"}},{\"wildcard\":{\"codec\":\"opus*\"}},{\"wildcard\":{\"codec\":\"G722/*\"}},{\"wildcard\":{\"codec\":\"G7221*\"}},{\"wildcard\":{\"codec\":\"PCMA*\"}},{\"wildcard\":{\"codec\":\"t38\"}}]}}},\"label\":\"-- Others\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}},\"vis\":{\"colors\":{\"FAX\":\"#CCA300\",\"G711\":\"#EAB839\",\"G722\":\"#7EB26D\",\"G729\":\"#6ED0E0\",\"Video: H264\":\"#99440A\",\"Voice Only\":\"#447EBC\",\"opus\":\"#EF843C\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Answered Calls\",\"disabled\":false,\"index\":\"bwcdr*\",\"key\":\"query\",\"negate\":false,\"value\":\"answerindicator:Yes OR answerindicator:Yes-PostRedirection\"},\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"answerindicator:Yes OR answerindicator:Yes-PostRedirection\"}}}],\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"query\":\"collaborate_bridge:*\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Userid-List",
+    "_type": "visualization",
+    "_source": {
+      "title": "Userid List",
+      "visState": "{\"title\":\"Userid List\",\"type\":\"table\",\"params\":{\"perPage\":100,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"calls\"}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:a*\",\"analyze_wildcard\":true}}},\"label\":\"starts with a\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:b*\",\"analyze_wildcard\":true}}},\"label\":\"starts with b\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:c*\",\"analyze_wildcard\":true}}},\"label\":\"starts with c\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:d*\",\"analyze_wildcard\":true}}},\"label\":\"starts with d\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:e*\",\"analyze_wildcard\":true}}},\"label\":\"starts with e\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:f*\",\"analyze_wildcard\":true}}},\"label\":\"starts with f\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:g*\",\"analyze_wildcard\":true}}},\"label\":\"starts with g\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:h*\",\"analyze_wildcard\":true}}},\"label\":\"starts with h\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:i*\",\"analyze_wildcard\":true}}},\"label\":\"starts with i\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:j*\",\"analyze_wildcard\":true}}},\"label\":\"starts with j\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:k*\",\"analyze_wildcard\":true}}},\"label\":\"starts with k\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:l*\",\"analyze_wildcard\":true}}},\"label\":\"starts with l\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:m*\",\"analyze_wildcard\":true}}},\"label\":\"starts with m\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:n*\",\"analyze_wildcard\":true}}},\"label\":\"starts with n\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:o*\",\"analyze_wildcard\":true}}},\"label\":\"starts with o\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:p*\",\"analyze_wildcard\":true}}},\"label\":\"starts with p\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:q*\",\"analyze_wildcard\":true}}},\"label\":\"starts with q\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:r*\",\"analyze_wildcard\":true}}},\"label\":\"starts with r\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:s*\",\"analyze_wildcard\":true}}},\"label\":\"starts with s\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:t*\",\"analyze_wildcard\":true}}},\"label\":\"starts with t\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:u*\",\"analyze_wildcard\":true}}},\"label\":\"starts with u\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:v*\",\"analyze_wildcard\":true}}},\"label\":\"starts with v\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:w*\",\"analyze_wildcard\":true}}},\"label\":\"starts with w\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:x*\",\"analyze_wildcard\":true}}},\"label\":\"starts with x\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:y*\",\"analyze_wildcard\":true}}},\"label\":\"starts with y\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"userid:z*\",\"analyze_wildcard\":true}}},\"label\":\"starts with z\"}],\"row\":false}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"userid\",\"size\":50,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"userid\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Unique-Calls-by-Codecs",
+    "_type": "visualization",
+    "_source": {
+      "title": "Unique Calls by Codecs",
+      "visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{\"customLabel\":\"Unique Calls\"},\"schema\":\"metric\",\"type\":\"count\"},{\"id\":\"2\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"*H264*\"}}},\"label\":\"Video: H264\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"*VP9*\"}}},\"label\":\"Video: VP9\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"*VP8*\"}}},\"label\":\"Video: VP8\"},{\"input\":{\"query\":{\"bool\":{\"must_not\":[{\"wildcard\":{\"codec\":\"* *\"}},{\"wildcard\":{\"codec\":\"t38\"}}]}}},\"label\":\"Voice Only\"},{\"input\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"codec:\\\"t38\\\"\"}}},\"label\":\"FAX\"}]},\"schema\":\"segment\",\"type\":\"filters\"},{\"id\":\"3\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"G729*\"}}},\"label\":\"-- G729\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"PCMU*\"}}},\"label\":\"-- G711\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"opus*\"}}},\"label\":\"-- opus\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"G722/*\"}}},\"label\":\"-- G722\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"G7221*\"}}},\"label\":\"-- G722.1\"},{\"input\":{\"query\":{\"wildcard\":{\"codec\":\"PCMA*\"}}},\"label\":\"-- G711.1\"},{\"input\":{\"query\":{\"bool\":{\"must_not\":[{\"wildcard\":{\"codec\":\"G729*\"}},{\"wildcard\":{\"codec\":\"PCMU*\"}},{\"wildcard\":{\"codec\":\"opus*\"}},{\"wildcard\":{\"codec\":\"G722/*\"}},{\"wildcard\":{\"codec\":\"G7221*\"}},{\"wildcard\":{\"codec\":\"PCMA*\"}},{\"wildcard\":{\"codec\":\"t38\"}}]}}},\"label\":\"-- Others\"}]},\"schema\":\"segment\",\"type\":\"filters\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":false,\"shareYAxis\":true},\"title\":\"Unique Calls by Codecs\",\"type\":\"pie\"}",
+      "uiStateJSON": "{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"vis\":{\"colors\":{\"FAX\":\"#CCA300\",\"G711\":\"#EAB839\",\"G722\":\"#7EB26D\",\"G729\":\"#6ED0E0\",\"Video: H264\":\"#99440A\",\"Voice Only\":\"#447EBC\",\"opus\":\"#EF843C\"}}}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"bwcdr*\",\"key\":\"wildcard\",\"negate\":false,\"value\":\"{\\\"codec\\\":\\\"*\\\"}\"},\"wildcard\":{\"codec\":\"*\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "Top-20-Enterprises-by-Group",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top 20 Enterprises by Group",
+      "visState": "{\"title\":\"Top 10 Service Providers by Group\",\"type\":\"table\",\"params\":{\"perPage\":100,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Unique Calls\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"serviceprovider\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"by Group\",\"row\":false}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"group\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Group\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Top-20-Enterprises",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top 20 Enterprises",
+      "visState": "{\"title\":\"Unique Calls for Top 10 Service Providers\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Unique Calls\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"serviceprovider\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Enterprise\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Average-Duration",
+    "_type": "visualization",
+    "_source": {
+      "title": "Average Duration",
+      "visState": "{\"title\":\"Average Duration\",\"type\":\"metric\",\"params\":{\"fontSize\":\"30\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"calculated_callduration\",\"customLabel\":\"Average Call Duration\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Answered Calls\",\"disabled\":false,\"index\":\"bwcdr*\",\"key\":\"query\",\"negate\":false,\"value\":\"answerindicator:Yes OR answerindicator:Yes-PostRedirection\"},\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"answerindicator:Yes OR answerindicator:Yes-PostRedirection\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "Unique-Users",
+    "_type": "visualization",
+    "_source": {
+      "title": "Unique Users",
+      "visState": "{\"title\":\"Unique Users\",\"type\":\"metric\",\"params\":{\"fontSize\":\"30\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"userid\",\"customLabel\":\"Unique Users\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Failed-Calls-Details",
+    "_type": "visualization",
+    "_source": {
+      "title": "Failed Calls Details",
+      "visState": "{\"title\":\"Failed Calls Details\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Per Termination Cause\"}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"terminationcause:001\",\"analyze_wildcard\":true}}},\"label\":\"001: Unassigned number (user not found)\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"terminationcause:003\",\"analyze_wildcard\":true}}},\"label\":\"003: No route to destination (request failure or unavailable failure)\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"terminationcause:020\",\"analyze_wildcard\":true}}},\"label\":\"020: User not available (for example, SIP phone not registered)\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"terminationcause:021\",\"analyze_wildcard\":true}}},\"label\":\"021: Call rejected (forbidden or global failure)\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"terminationcause:027\",\"analyze_wildcard\":true}}},\"label\":\"027: Destination out of order (server request failure)\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"terminationcause:031\",\"analyze_wildcard\":true}}},\"label\":\"031: Network disconnect (Normal unspecified)\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"terminationcause:041\",\"analyze_wildcard\":true}}},\"label\":\"041: Temporary Failure\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"terminationcause:086\",\"analyze_wildcard\":true}}},\"label\":\"086: Call Cleared\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"terminationcause:111\",\"analyze_wildcard\":true}}},\"label\":\"111: Protocol error (unknown release code)\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}},\"label\":\"Total Failed Calls\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"NOT terminationcause:016 AND NOT terminationcause:017 AND NOT terminationcause:019\",\"analyze_wildcard\":true}},\"meta\":{\"index\":\"bwcdr*\",\"key\":\"query\",\"value\":\"NOT terminationcause:016 AND NOT terminationcause:017 AND NOT terminationcause:019\",\"disabled\":false,\"negate\":false,\"alias\":\"Failed Calls\"},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "Unique-Calls-per-time-period",
+    "_type": "visualization",
+    "_source": {
+      "title": "Unique Calls per time period",
+      "visState": "{\"title\":\"Unique Calls per time period\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Calls\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"starttime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Start Time\"}},{\"id\":\"3\",\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"answerindicator:Yes OR answerindicator:Yes-PostRedirection\"}}},\"label\":\"Answered\"},{\"input\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"answerindicator:No\"}}},\"label\":\"Not Answered\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "3-Switch-to:",
+    "_type": "visualization",
+    "_source": {
+      "title": "3 - Switch to:",
+      "visState": "{\"title\":\"3 - Switch to:\",\"type\":\"markdown\",\"params\":{\"markdown\":\"##### [1 - Calls Dashboard](#/dashboard/Calls-Dashboard)\\n\\n##### [2 - Collaboration Dashboard](#/dashboard/Collaborate-Dashboard)\\n\\n#### [**3 -  IM Dashboard**](#/dashboard/IM-Dashboard)\\n\\n##### [4 - Sharing Dashboard](#/dashboard/Sharing-Dashboard)\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "1-Switch-to:",
+    "_type": "visualization",
+    "_source": {
+      "title": "1 - Switch to:",
+      "visState": "{\"title\":\"1 - Switch to:\",\"type\":\"markdown\",\"params\":{\"markdown\":\"####  [**1 - Calls Dashboard**](#/dashboard/Calls-Dashboard)\\n\\n##### [2 - Collaboration Dashboard](#/dashboard/Collaborate-Dashboard)\\n\\n##### [3 - IM Dashboard](#/dashboard/IM-Dashboard)\\n\\n##### [4 - Sharing Dashboard](#/dashboard/Sharing-Dashboard)\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "2-Switch-to:",
+    "_type": "visualization",
+    "_source": {
+      "title": "2 - Switch to:",
+      "visState": "{\"title\":\"2 - Switch to:\",\"type\":\"markdown\",\"params\":{\"markdown\":\"##### [1 - Calls Dashboard](#/dashboard/Calls-Dashboard)\\n\\n#### [**2 - Collaboration Dashboard**](#/dashboard/Collaborate-Dashboard)\\n\\n##### [3 - IM Dashboard](#/dashboard/IM-Dashboard)\\n\\n##### [4 - Sharing Dashboard](#/dashboard/Sharing-Dashboard)\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "4-Switch-to:",
+    "_type": "visualization",
+    "_source": {
+      "title": "4 - Switch to:",
+      "visState": "{\"title\":\"4 - Switch to:\",\"type\":\"markdown\",\"params\":{\"markdown\":\"##### [1 - Calls Dashboard](#/dashboard/Calls-Dashboard)\\n\\n##### [2 - Collaboration Dashboard](#/dashboard/Collaborate-Dashboard)\\n\\n##### [3 -  IM Dashboard](#/dashboard/IM-Dashboard)\\n\\n#### [**4 - Sharing Dashboard**](#/dashboard/Sharing-Dashboard)\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Col:-Unique-Rooms",
+    "_type": "visualization",
+    "_source": {
+      "title": "Col: Unique Rooms",
+      "visState": "{\"title\":\"Col: Leader Sessions\",\"type\":\"metric\",\"params\":{\"fontSize\":\"30\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"collaborate_roomid\",\"customLabel\":\"Unique Rooms\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"query\":\"collaborate_roomid:* AND NOT answerindicator:No\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Answered-Calls-Stats",
+    "_type": "visualization",
+    "_source": {
+      "title": "Answered Calls Stats",
+      "visState": "{\"title\":\"Answered Calls\",\"type\":\"metric\",\"params\":{\"fontSize\":\"25\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Answered Calls\"}},{\"id\":\"2\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"calculated_callduration\",\"customLabel\":\"Total Duration\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"calculated_callduration\",\"customLabel\":\"Average Duration\"}},{\"id\":\"4\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"calculated_callduration\",\"customLabel\":\"Longest Call\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"answerindicator:Yes OR answerindicator:Yes-PostRedirection\",\"analyze_wildcard\":true}},\"meta\":{\"index\":\"bwcdr*\",\"key\":\"query\",\"value\":\"answerindicator:Yes OR answerindicator:Yes-PostRedirection\",\"disabled\":false,\"negate\":false,\"alias\":\"Answered Calls\"},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "Answered-Calls",
+    "_type": "visualization",
+    "_source": {
+      "title": "Answered Calls",
+      "visState": "{\"title\":\"Answered Calls\",\"type\":\"metric\",\"params\":{\"fontSize\":\"25\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Answered Calls\"}},{\"id\":\"2\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"calculated_callduration\",\"customLabel\":\"Total Duration\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"calculated_callduration\",\"customLabel\":\"Average Duration\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"answerindicator:Yes OR answerindicator:Yes-PostRedirection\",\"analyze_wildcard\":true}},\"meta\":{\"index\":\"bwcdr*\",\"key\":\"query\",\"value\":\"answerindicator:Yes OR answerindicator:Yes-PostRedirection\",\"disabled\":false,\"negate\":false,\"alias\":\"Answered Calls\"},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "Unique-Calls",
+    "_type": "visualization",
+    "_source": {
+      "title": "Unique Calls",
+      "visState": "{\"title\":\"Unique Calls\",\"type\":\"metric\",\"params\":{\"fontSize\":\"30\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Unique Call Attempts\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Unique-Calls",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Terminating-Device-Category",
+    "_type": "visualization",
+    "_source": {
+      "title": "Terminating Device Category",
+      "visState": "{\"title\":\"Terminating Device Category\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"(type:Normal AND NOT ascalltype:Internal AND direction:Terminating AND (answerindicator:Yes OR answerindicator:\\\"Yes-PostRedirection\\\") AND (locationtype:\\\"Primary Device\\\" OR locationtype:\\\"Shared Call Appearance\\\") AND useragent:*) AND NOT ((useragent:/[a-z]/Communicator\\\"*\\\") OR (useragent:/[a-z]/\\\"UC-One\\\"))\",\"analyze_wildcard\":true}}},\"label\":\"Deskphone\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"(type:Normal AND NOT ascalltype:Internal AND direction:Terminating AND (answerindicator:Yes OR answerindicator:\\\"Yes-PostRedirection\\\") AND (locationtype:\\\"Primary Device\\\" OR locationtype:\\\"Shared Call Appearance\\\") ) AND (useragent: *Communicator*)\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}}},\"label\":\"UC-One Communicator\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"(type:Normal AND direction:Originating AND (ascalltype:Network OR ascalltype:\\\"Network URL\\\" OR ascalltype:Emergency) AND (answerindicator:Yes OR answerindicator:\\\"Yes-PostRedirection\\\") AND (relatedcallidreason:\\\"BroadWorks Anywhere Location\\\" OR relatedcallidreason:\\\"BroadWorks Mobility\\\" OR relatedcallidreason:\\\"Remote Office\\\" OR relatedcallidreason:\\\"Simultaneous Ring Personal\\\"))\",\"analyze_wildcard\":true}}},\"label\":\"Mobility Termination\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"(type:Normal AND direction:Originating AND (ascalltype:Network OR ascalltype:\\\"Network URL\\\" OR ascalltype:Emergency) AND (answerindicator:Yes OR answerindicator:\\\"Yes-PostRedirection\\\") AND NOT (relatedcallidreason:\\\"BroadWorks Anywhere Location\\\" OR relatedcallidreason:\\\"BroadWorks Mobility\\\" OR relatedcallidreason:\\\"Remote Office\\\" OR relatedcallidreason:\\\"Simultaneous Ring Personal\\\"))\",\"analyze_wildcard\":true}}},\"label\":\"PSTN Termination\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"(type:Normal AND NOT ascalltype:Internal AND direction:Terminating AND (answerindicator:Yes OR answerindicator:\\\"Yes-PostRedirection\\\") AND (collaborate_roomid:* OR meetmeconference_conferenceid:*))\",\"analyze_wildcard\":true}}},\"label\":\"Conference Termination\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"(type:Normal AND NOT ascalltype:Internal AND direction:Originating AND ascalltype:Group AND (answerindicator:Yes OR answerindicator:\\\"Yes-PostRedirection\\\") AND (otherpartyname:\\\"Voice Messaging\\\" OR otherpartyname:\\\"Voice Messaging Group Voice Messaging Group\\\"))\",\"analyze_wildcard\":true}}},\"label\":\"Voice Mail\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Originating-Device-Category",
+    "_type": "visualization",
+    "_source": {
+      "title": "Originating Device Category",
+      "visState": "{\"title\":\"Originating Device Category\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":false,\"shareYAxis\":true,\"spyPerPage\":10},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Call Attempts\"}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"(direction:Terminating AND NOT originalcalledreason:* AND NOT locationtype:\\\"BroadWorks Anywhere\\\" AND NOT locationtype:\\\"BroadWorks Mobility\\\") AND (ascalltype:Network OR ascalltype:\\\"Network URL\\\" OR ascalltype:Emergency)\",\"analyze_wildcard\":true}}},\"label\":\"PSTN\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"(direction:Originating AND NOT locationtype:\\\"BroadWorks Anywhere\\\" AND NOT locationtype:\\\"BroadWorks Mobility\\\")  AND (useragent: *Communicator*)\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}}},\"label\":\"UC-One Communicator\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"(direction:Originating ) AND (locationtype:\\\"BroadWorks Anywhere\\\" OR locationtype:\\\"BroadWorks Mobility\\\")\",\"analyze_wildcard\":true}}},\"label\":\"Mobility\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"(direction:Originating AND NOT locationtype:\\\"BroadWorks Anywhere\\\" AND NOT locationtype:\\\"BroadWorks Mobility\\\")  AND (useragent:/[a-z]/\\\"webrtc\\\")\",\"analyze_wildcard\":true}}},\"label\":\"WebRTC\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"(direction:Originating AND NOT locationtype:\\\"BroadWorks Anywhere\\\" AND NOT locationtype:\\\"BroadWorks Mobility\\\") AND NOT ((useragent:/[a-z]/Communicator\\\"*\\\") OR (useragent:/[a-z]/\\\"webrtc\\\") OR (useragent:/[a-z]/\\\"UC-One\\\"))\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}}},\"label\":\"Deskphone\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"colors\":{\"Answered\":\"#629E51\",\"Not Answered\":\"#BF1B00\"}}},\"P-2\":{\"vis\":{\"legendOpen\":true}},\"P-7\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-8\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-9\":{\"vis\":{\"legendOpen\":false}},\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false,\"query\":\"*\"}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Terminating-Device:-UC-One-Communicator",
+    "_type": "visualization",
+    "_source": {
+      "title": "Terminating Device: UC-One Communicator",
+      "visState": "{\"title\":\"Terminating Device: UC-One Communicator\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":false,\"shareYAxis\":true,\"spyPerPage\":10},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Call Attempts\"}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"wildcard\":{\"useragent\":\"*Windows*\"}}},\"label\":\"Windows\"},{\"input\":{\"query\":{\"wildcard\":{\"useragent\":\"*Mac*\"}}},\"label\":\"Mac\"},{\"input\":{\"query\":{\"wildcard\":{\"useragent\":\"*iPhone*\"}}},\"label\":\"iPhone\"},{\"input\":{\"query\":{\"wildcard\":{\"useragent\":\"*Android Mobile*\"}}},\"label\":\"Android Mobile\"},{\"input\":{\"query\":{\"wildcard\":{\"useragent\":\"*Chrome*\"}}},\"label\":\"Chrome\"},{\"input\":{\"query\":{\"wildcard\":{\"useragent\":\"*Android Tablet*\"}}},\"label\":\"Android Tablet\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"useragent: \\\"Business Communicator Mobile\\\"\",\"analyze_wildcard\":true}}},\"label\":\"Mobile (unknown OS)\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"colors\":{\"Answered\":\"#629E51\",\"Not Answered\":\"#BF1B00\"}}},\"P-2\":{\"vis\":{\"legendOpen\":true}},\"P-7\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-8\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-9\":{\"vis\":{\"legendOpen\":false}},\"spy\":{\"mode\":{\"name\":\"table\",\"fill\":false}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"(type:Normal AND NOT ascalltype:Internal AND direction:Terminating AND (answerindicator:Yes OR answerindicator:\\\"Yes-PostRedirection\\\") AND (locationtype:\\\"Primary Device\\\" OR locationtype:\\\"Shared Call Appearance\\\") ) AND (useragent: *Communicator*)\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"meta\":{\"index\":\"bwcdr*\",\"key\":\"query\",\"value\":\"(type:Normal AND NOT ascalltype:Internal AND direction:Terminating AND (answerindicator:Yes OR answerindicator:\\\"Yes-PostRedirection\\\") AND (locationtype:\\\"Primary Device\\\" OR locationtype:\\\"Shared Call Appearance\\\") ) AND (useragent: *Communicator*)\",\"disabled\":false,\"negate\":false,\"alias\":null},\"$state\":{\"store\":\"appState\"}}],\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Originating-Device:-UC-One-Communicator",
+    "_type": "visualization",
+    "_source": {
+      "title": "Originating Device: UC-One Communicator",
+      "visState": "{\"title\":\"Originating Device: UC-One Communicator\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":false,\"shareYAxis\":true,\"spyPerPage\":10},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Call Attempts\"}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"wildcard\":{\"useragent\":\"*Windows*\"}}},\"label\":\"Windows\"},{\"input\":{\"query\":{\"wildcard\":{\"useragent\":\"*Mac*\"}}},\"label\":\"Mac\"},{\"input\":{\"query\":{\"wildcard\":{\"useragent\":\"*iPhone*\"}}},\"label\":\"iPhone\"},{\"input\":{\"query\":{\"wildcard\":{\"useragent\":\"*Android Mobile*\"}}},\"label\":\"Android Mobile\"},{\"input\":{\"query\":{\"wildcard\":{\"useragent\":\"*Chrome*\"}}},\"label\":\"Chrome\"},{\"input\":{\"query\":{\"wildcard\":{\"useragent\":\"*Android Tablet*\"}}},\"label\":\"Android Tablet\"},{\"input\":{\"query\":{\"wildcard\":{\"useragent\":\"*iPad*\"}}},\"label\":\"iPad\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"useragent: \\\"Business Communicator Mobile\\\"\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}}},\"label\":\"Mobile (unknown OS)\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"useragent: \\\"Business Communicator Tablet\\\"\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}}},\"label\":\"Tablet (unknown OS)\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"colors\":{\"Answered\":\"#629E51\",\"Not Answered\":\"#BF1B00\"}}},\"P-2\":{\"vis\":{\"legendOpen\":true}},\"P-7\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-8\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-9\":{\"vis\":{\"legendOpen\":false}},\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false,\"query\":\"(direction:Originating AND NOT locationtype:\\\"BroadWorks Anywhere\\\" AND NOT locationtype:\\\"BroadWorks Mobility\\\")  AND (useragent: *Communicator*)\"}},\"meta\":{\"index\":\"bwcdr*\",\"key\":\"query\",\"value\":\"(direction:Originating AND NOT locationtype:\\\"BroadWorks Anywhere\\\" AND NOT locationtype:\\\"BroadWorks Mobility\\\")  AND (useragent: *Communicator*)\",\"disabled\":false,\"negate\":false,\"alias\":null},\"$state\":{\"store\":\"appState\"}}],\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Col:-Avg-Duration",
+    "_type": "visualization",
+    "_source": {
+      "title": "Col: Avg Duration",
+      "visState": "{\"title\":\"Col: Avg Duration\",\"type\":\"metric\",\"params\":{\"fontSize\":\"30\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"calculated_callduration\",\"customLabel\":\"Average Duration\"}},{\"id\":\"2\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"calculated_callduration\",\"customLabel\":\"Total\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"query\":\"collaborate_role:*\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
+      }
+    }
+  }
+]
