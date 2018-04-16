@@ -1,0 +1,142 @@
+[
+  {
+    "_id": "User-Services-Inventory",
+    "_type": "visualization",
+    "_source": {
+      "title": "User Services Inventory",
+      "visState": "{\"title\":\"User Services Inventory\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Instances\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"service_name\",\"size\":200,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"User Services\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"_type: user_services\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Related-Call-ID-Reasons",
+    "_type": "visualization",
+    "_source": {
+      "title": "Related Call ID Reasons",
+      "visState": "{\"title\":\"Related Call ID Reasons\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"userid\",\"customLabel\":\"Unique Users\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"relatedcallidreason\",\"size\":43,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Related Call ID Reason\"}},{\"id\":\"3\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# of Invocations\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"bwcdr*\",\"query\":{\"query_string\":{\"query\":\"relatedcallidreason:*\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Related-Call-ID-Reason-and-Triggering-Services",
+    "_type": "visualization",
+    "_source": {
+      "title": "Related Call ID Reason and Triggering Services",
+      "visState": "{\"title\":\"Related Call ID Reason and Triggering Services\",\"type\":\"markdown\",\"params\":{\"markdown\":\"**Automatic Hold/Retrieve** -- Automatic Hold/Retrieve   \\n**Barge-in** -- Directed Call Pickup with Barge-in when barge-in occurs  \\n**BroadWorks Anywhere Location** -- BroadWorks Anywhere  \\n**Broadworks Anywhere Portal** -- BroadWorks Anywhere  \\n**BroadWorks Mobility** -- BroadWorks Mobility  \\n**Call Center** -- Call Center  \\n**Call Forward Alway** -- Call Forwarding Always  \\n**Call Forward Busy** -- Call Forwarding Busy, Transfer to voice mail for BUSY reason  \\n**Call Forward No Answer** -- Call Forwarding No Answer, Hunt Group redirection for no answer, Call Center redirection for no answer, Transfer to voice mail for no answer  \\n**Call Forward Not Reachable** -- Call Forwarding Not Reachable, Hunt Group redirection for Not\\nReachable  \\n**Call Forward Selective** -- Call Forwarding Selective  \\n**Call Park** -- Call Park  \\n**Call Park Retrieve** -- Call Park Retrieve   \\n**Call Pickup** -- Call Pickup  \\n**Call Processing Language** -- Call Processing Language forward  \\n**Call Recording** -- Call Recording  \\n**Call Retrieve** -- BroadWorks Anywhere, Shared Call Appearance  \\n**CC-Monitoring-BI** -- Call Center Monitoring with Barge-In, Monitoring Next Call  \\n**Deflection** -- Blind transfer initiated at the Call Manager, Transfer initiated by the SIP REFER method, Auto Attendant, Intercept terminator,  Transfer out of a Call Center holding queue initiated by a CAP message, User device redirection, Transfer from one voice portal to another, Transfer from the voice portal to the attendant (dial 0), Transfer to voice mail caused\\nby release causes other than BUSY or FORBIDDEN  \\n**Directed Call Pickup** -- Directed Call Pickup, Directed Call Pickup with Barge-in when no barge-in occurs  \\n**Directory Number Hunting** -- Directory Number Hunting  \\n**Executive** -- Executive  \\n**Executive Forward** -- Executive  \\n**Executive-Assistant Call Push** -- Executive-Assistant  \\n**Executive-Assistant Divert** -- Executive-Assistant  \\n**Executive-Assistant Initiate Call** -- Executive-Assistant  \\n**Fax Deposit** - Fax  \\n**Find-me/Follow-me** -- Find-me/Follow-me  \\n**FMFM Call Push** -- Find-Me Follow-Me Call Push  \\n**Group Night Forwarding** -- Group Night Forwarding  \\n**Hunt Group** -- Hunt Group  \\n**Personal Assistant** -- Personal Assistant  \\n**Remote Office** -- Remote Office  \\n**Sequential Ringing** -- Sequential Ringing  \\n**Series Completion** -- Series Completion  \\n**Simultaneous Ringing Family** -- Simultaneous Ringing Family  \\n**Simultaneous Ringing Personal** --  Simultaneous Ringing Personal  \\n**Route Point** -- Route Point  \\n**Third Party Deflection** -- Transfer using the PBX Integration feature occurring with an out-of-dialog INVITE or when the origination is within\\nthe PBX, Transfer using PBX Integration feature occurring within an existing dialog using a 302 response or the REFER method  \\n**Transfer Consult** -- Transfer Consult, Transfer following a Directed Call Pickup with Barge-in (DPUBI) when the barge-in user is first to leave the call  \\n**Trunk Group Forward Capacity Exceeded** -- Business Trunking  \\n**Trunk Group Forward Unconditional** -- Call Forwarding Always on a Business Trunk  \\n**Trunk Group Forward Unreachable** -- Business Trunking\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "User-Activatable-Services-Status",
+    "_type": "visualization",
+    "_source": {
+      "title": "User Activatable Services Status",
+      "visState": "{\"title\":\"User Activatable Services Status\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Activated\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"service_name\",\"size\":200,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"User Services\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"_type: user_services AND activated: true\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "No.-User-Services-Assigned",
+    "_type": "visualization",
+    "_source": {
+      "title": "No. User Services Assigned",
+      "visState": "{\"title\":\"No. User Services Assigned\",\"type\":\"metric\",\"params\":{\"fontSize\":60,\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"service_name\",\"customLabel\":\"No. User Services\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"_type:user_services\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "No.-Group-Services-Assigned",
+    "_type": "visualization",
+    "_source": {
+      "title": "No. Group Services Assigned",
+      "visState": "{\"title\":\"No. Group Services Assigned\",\"type\":\"metric\",\"params\":{\"fontSize\":60,\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"service_name\",\"customLabel\":\"No. Group Services\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"_type:group_services\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Call-Forwarding-Services",
+    "_type": "visualization",
+    "_source": {
+      "title": "Call Forwarding Services",
+      "visState": "{\"title\":\"Call Forwarding Services\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"No. of Users with Service Assigned\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"service_name\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Call Forwarding Services\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"activated:true\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}}},\"label\":\"Activated\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"NOT Activated\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}}}}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Activated\":\"#629E51\",\"NOT Activated\":\"#F9934E\"},\"legendOpen\":true}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"wildcard\":{\"service_name\":\"Call Forwarding*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Group-Services-Inventory",
+    "_type": "visualization",
+    "_source": {
+      "title": "Group Services Inventory",
+      "visState": "{\"title\":\"Group Services Inventory\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Instances\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"service_name\",\"size\":50,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Group Services\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false,\"query\":\"_type: group_services\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "SP-Enterprises by users",
+    "_type": "visualization",
+    "_source": {
+      "title": "SP-Enterprises by users",
+      "visState": "{\"title\":\"SP-Enterprises by users\",\"type\":\"table\",\"params\":{\"perPage\":3,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"userid\",\"customLabel\":\"No. Users\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"serviceprovider\",\"size\":100,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"<<\",\"row\":true}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"group\",\"size\":20,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Group\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"userid: *\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Subscriber Export Snapshot",
+    "_type": "visualization",
+    "_source": {
+      "title": "Subscriber Export Snapshot",
+      "visState": "{\"title\":\"Subscriber Export Snapshot\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":\"14\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"logtimestamp\",\"customLabel\":\"Last Updated\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"serviceprovider\",\"customLabel\":\"Service Providers / Enterprises\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"group\",\"customLabel\":\"Groups\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"userid\",\"customLabel\":\"Users\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  }
+]
