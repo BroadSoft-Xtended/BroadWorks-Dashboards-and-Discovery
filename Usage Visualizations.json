@@ -1,15 +1,113 @@
 [
   {
+    "_id": "SP-Enterprises by users",
+    "_type": "visualization",
+    "_source": {
+      "title": "SP-Enterprises by users",
+      "visState": "{\"title\":\"SP-Enterprises by users\",\"type\":\"table\",\"params\":{\"perPage\":3,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"userid\",\"customLabel\":\"No. Users\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"serviceprovider\",\"size\":100,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"<<\",\"row\":true}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"group\",\"size\":20,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Group\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"userid: *\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "SP-Enterprises by users",
+    "_type": "visualization",
+    "_source": {
+      "title": "SP-Enterprises by users",
+      "visState": "{\"title\":\"SP-Enterprises by users\",\"type\":\"table\",\"params\":{\"perPage\":3,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"userid\",\"customLabel\":\"No. Users\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"serviceprovider\",\"size\":100,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"<<\",\"row\":true}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"group\",\"size\":20,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Group\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"userid: *\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "User-Activatable-Services-Status",
+    "_type": "visualization",
+    "_source": {
+      "title": "User Activatable Services Status",
+      "visState": "{\"title\":\"User Activatable Services Status\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Activated\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"service_name\",\"size\":200,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"User Services\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"type: user_services AND activated: true\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "User-Services-Activated",
+    "_type": "visualization",
+    "_source": {
+      "title": "User Services Activated",
+      "visState": "{\"title\":\"User Services Activated\",\"type\":\"metric\",\"params\":{\"fontSize\":60,\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"service_name\",\"customLabel\":\"Activated User Services\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"type:user_services AND activated: true\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
+      }
+    }
+  },
+  {
     "_id": "User-Services-Inventory",
     "_type": "visualization",
     "_source": {
       "title": "User Services Inventory",
       "visState": "{\"title\":\"User Services Inventory\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Instances\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"service_name\",\"size\":200,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"User Services\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+      "uiStateJSON": "{\n  \"spy\": {\n    \"mode\": {\n      \"name\": null,\n      \"fill\": false\n    }\n  }\n}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"_type: user_services\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"type: user_services\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Subscriber Export Snapshot",
+    "_type": "visualization",
+    "_source": {
+      "title": "Subscriber Export Snapshot",
+      "visState": "{\"title\":\"Subscriber Export Snapshot\",\"type\":\"metric\",\"params\":{\"addLegend\":false,\"addTooltip\":true,\"fontSize\":\"14\",\"gauge\":{\"autoExtend\":false,\"backStyle\":\"Full\",\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":100}],\"gaugeColorMode\":\"None\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Metric\",\"invertColors\":false,\"labels\":{\"color\":\"black\",\"show\":true},\"orientation\":\"vertical\",\"percentageMode\":false,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":false,\"width\":2},\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":\"12\",\"labelColor\":false,\"subText\":\"\"},\"type\":\"simple\",\"useRange\":false,\"verticalSplit\":false},\"handleNoResults\":true,\"type\":\"gauge\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"logtimestamp\",\"customLabel\":\"Last Updated\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"serviceprovider\",\"customLabel\":\"Service Providers / Enterprises\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"group\",\"customLabel\":\"Groups\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"userid\",\"customLabel\":\"Users\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "240a5f40-9e19-11e7-a77d-ff5e3b10bd18",
+    "_type": "visualization",
+    "_source": {
+      "title": "Subscriber Export Snapshot Date",
+      "visState": "{\n  \"title\": \"Subscriber Export Snapshot Date\",\n  \"type\": \"metric\",\n  \"params\": {\n    \"addLegend\": false,\n    \"addTooltip\": true,\n    \"fontSize\": \"12\",\n    \"gauge\": {\n      \"autoExtend\": false,\n      \"backStyle\": \"Full\",\n      \"colorSchema\": \"Green to Red\",\n      \"colorsRange\": [\n        {\n          \"from\": 0,\n          \"to\": 100\n        }\n      ],\n      \"gaugeColorMode\": \"None\",\n      \"gaugeStyle\": \"Full\",\n      \"gaugeType\": \"Metric\",\n      \"invertColors\": false,\n      \"labels\": {\n        \"color\": \"black\",\n        \"show\": true\n      },\n      \"orientation\": \"vertical\",\n      \"percentageMode\": false,\n      \"scale\": {\n        \"color\": \"#333\",\n        \"labels\": false,\n        \"show\": false,\n        \"width\": 2\n      },\n      \"style\": {\n        \"bgColor\": false,\n        \"bgFill\": \"#000\",\n        \"fontSize\": \"12\",\n        \"labelColor\": false,\n        \"subText\": \"\"\n      },\n      \"type\": \"simple\",\n      \"useRange\": false,\n      \"verticalSplit\": false\n    },\n    \"handleNoResults\": true,\n    \"type\": \"gauge\"\n  },\n  \"aggs\": [\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"max\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"logtimestamp\",\n        \"customLabel\": \"Last Updated\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}",
+      "uiStateJSON": "{\n  \"vis\": {\n    \"defaultColors\": {\n      \"0 - 100\": \"rgb(0,104,55)\"\n    }\n  }\n}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"subscriberexport\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+      }
+    }
+  },
+  {
+    "_id": "0c36abd0-9e19-11e7-a77d-ff5e3b10bd18",
+    "_type": "visualization",
+    "_source": {
+      "title": "Subscriber Export Snapshot Metrics",
+      "visState": "{\"title\":\"Subscriber Export Snapshot Metrics\",\"type\":\"metric\",\"params\":{\"addLegend\":false,\"addTooltip\":true,\"fontSize\":\"10\",\"gauge\":{\"autoExtend\":false,\"backStyle\":\"Full\",\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":100}],\"gaugeColorMode\":\"None\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Metric\",\"invertColors\":false,\"labels\":{\"color\":\"black\",\"show\":true},\"orientation\":\"vertical\",\"percentageMode\":false,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":false,\"width\":2},\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":\"26\",\"labelColor\":false,\"subText\":\"\"},\"type\":\"simple\",\"useRange\":false,\"verticalSplit\":false},\"handleNoResults\":true,\"type\":\"gauge\"},\"aggs\":[{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"serviceprovider\",\"customLabel\":\"Service Providers / Enterprises\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"group\",\"customLabel\":\"Groups\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"userid\",\"customLabel\":\"Users\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
       }
     }
   },
@@ -42,16 +140,16 @@
     }
   },
   {
-    "_id": "User-Activatable-Services-Status",
+    "_id": "No.-Group-Services-Assigned",
     "_type": "visualization",
     "_source": {
-      "title": "User Activatable Services Status",
-      "visState": "{\"title\":\"User Activatable Services Status\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Activated\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"service_name\",\"size\":200,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"User Services\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+      "title": "No. Group Services Assigned",
+      "visState": "{\"title\":\"No. Group Services Assigned\",\"type\":\"metric\",\"params\":{\"fontSize\":60,\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"service_name\",\"customLabel\":\"No. Group Services\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"_type: user_services AND activated: true\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"type:group_services\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
       }
     }
   },
@@ -65,35 +163,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"_type:user_services\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "No.-Group-Services-Assigned",
-    "_type": "visualization",
-    "_source": {
-      "title": "No. Group Services Assigned",
-      "visState": "{\"title\":\"No. Group Services Assigned\",\"type\":\"metric\",\"params\":{\"fontSize\":60,\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"service_name\",\"customLabel\":\"No. Group Services\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"_type:group_services\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "Call-Forwarding-Services",
-    "_type": "visualization",
-    "_source": {
-      "title": "Call Forwarding Services",
-      "visState": "{\"title\":\"Call Forwarding Services\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"No. of Users with Service Assigned\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"service_name\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Call Forwarding Services\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"activated:true\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}}},\"label\":\"Activated\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"NOT Activated\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}}}}]}}],\"listeners\":{}}",
-      "uiStateJSON": "{\"vis\":{\"colors\":{\"Activated\":\"#629E51\",\"NOT Activated\":\"#F9934E\"},\"legendOpen\":true}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"wildcard\":{\"service_name\":\"Call Forwarding*\"}},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"type:user_services\",\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false}},\"filter\":[]}"
       }
     }
   },
@@ -107,36 +177,23 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false,\"query\":\"_type: group_services\"}},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false,\"query\":\"type: group_services\"}},\"filter\":[]}"
       }
     }
   },
   {
-    "_id": "SP-Enterprises by users",
+    "_id": "Call-Forwarding-Services",
     "_type": "visualization",
     "_source": {
-      "title": "SP-Enterprises by users",
-      "visState": "{\"title\":\"SP-Enterprises by users\",\"type\":\"table\",\"params\":{\"perPage\":3,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"userid\",\"customLabel\":\"No. Users\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"serviceprovider\",\"size\":100,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"<<\",\"row\":true}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"group\",\"size\":20,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Group\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "title": "Call Forwarding Services",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"No. of Users with Service Assigned\"},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Call Forwarding Services\",\"field\":\"service_name\",\"order\":\"asc\",\"orderBy\":\"_term\",\"size\":10},\"schema\":\"segment\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false,\"query\":\"activated:true\"}}},\"label\":\"Activated\"},{\"input\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"lowercase_expanded_terms\":false,\"query\":\"NOT activated:true\"}}},\"label\":\"NOT Activated\"}]},\"schema\":\"group\",\"type\":\"filters\"}],\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"defaultYExtents\":false,\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"mode\":\"stacked\",\"scale\":\"linear\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"No. of Users with Service Assigned\"},\"mode\":\"stacked\",\"show\":\"true\",\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"defaultYExtents\":false,\"mode\":\"normal\",\"setYExtents\":false,\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"No. of Users with Service Assigned\"},\"type\":\"value\"}],\"yAxis\":{}},\"title\":\"Call Forwarding Services\",\"type\":\"histogram\"}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Activated\":\"#629E51\",\"NOT Activated\":\"#F9934E\"},\"legendOpen\":true}}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"userid: *\",\"analyze_wildcard\":true}},\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "Subscriber Export Snapshot",
-    "_type": "visualization",
-    "_source": {
-      "title": "Subscriber Export Snapshot",
-      "visState": "{\"title\":\"Subscriber Export Snapshot\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":\"14\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"logtimestamp\",\"customLabel\":\"Last Updated\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"serviceprovider\",\"customLabel\":\"Service Providers / Enterprises\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"group\",\"customLabel\":\"Groups\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"userid\",\"customLabel\":\"Users\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"subscriberexport\",\"query\":{\"language\":\"lucene\",\"query\":{\"wildcard\":{\"service_name\":\"Call Forwarding*\"}}},\"filter\":[]}"
       }
     }
   }
+    
 ]
